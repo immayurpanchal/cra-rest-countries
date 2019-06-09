@@ -1,0 +1,46 @@
+@import '../utils/util.scss'; 
+
+.btn-primary {
+    border: none;
+    display: flex;
+    width: auto;
+    padding: 18px;
+    background-color: $primary-color;
+    font-family: 'Segoe UI';
+    color: white;
+    font-weight: 400;
+    font-size: medium;
+    border-radius: 14px;
+    margin: 0px;
+    height: 100%;
+    
+    &:focus{
+        outline-style: none;
+    }
+
+    &:hover {
+        background-color: $secondary-color;
+    }
+}
+
+.search-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.searchbox { 
+    border: none;
+    display: flex;
+    border-radius: 10px;
+    margin: 0px 10px;
+    width: 50%;
+    height: auto;
+    font-size: 40px;
+    font-family: 'Segoe UI';
+    padding-inline-start: 10px;
+
+    &:focus{
+        outline-style: none;
+    }
+}
