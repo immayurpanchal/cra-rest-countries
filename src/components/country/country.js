@@ -4,9 +4,9 @@ import './country.scss';
 const Country = props => {
 	return (
 		<div className="card">
-			<div >
+			<div className="card_flag">
 				<img
-					className="card-flag"
+					className="flag_img"
 					src={props.flag}
 					width="200px"
 					height="150px"
@@ -14,8 +14,14 @@ const Country = props => {
 				/>
 			</div>
 			<div>
-				<h1 className="card-title">Name : </h1> <b>{props.name}</b>
-				<h4 className="card-description">Capital : </h4><b>{props.capital}</b>
+				<div className="card-data">
+					<span className="card_title">Name : </span>
+					<span className="card_info">{props.name}</span>
+				</div>
+				<div className="card-data">
+					<span className="card_title">Capital : </span>
+					<span className="card_info">{props.capital}</span>
+				</div>
 			</div>
 		</div>
 	);

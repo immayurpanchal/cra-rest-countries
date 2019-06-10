@@ -1,2 +1,8 @@
 $primary-color: #66BB6A;
 $secondary-color: #00BCD4;
+
+@mixin rounded-corners ($arguments) {
+    -webkit-border-radius: $arguments;
+    -moz-border-radius: $arguments;
+    border-radius: $arguments;
+}

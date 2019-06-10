@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Search from './components/search/search';
 import Country from './components/country/country';
-import './App.scss';
+import './app.scss';
 
 class App extends Component {
 	state = {
@@ -36,7 +36,7 @@ class App extends Component {
 	};
 	render() {
 		return (
-			<div className="App">
+			<div className="app">
 				<Search fetchResult={this.fetchResult} inputText={this.inputText} />
 				<div className="country-list">
 					{this.state.resultData.map(country => {
